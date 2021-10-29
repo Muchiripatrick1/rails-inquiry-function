@@ -1,0 +1,15 @@
+<%= form_with(model: inquiry.new, local: true) do |form| %>
+  <div class="inquiry_name">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="inquiry_email">
+    <%= form.label :Email %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="inquiry_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.create contact %>
+<% end %>
