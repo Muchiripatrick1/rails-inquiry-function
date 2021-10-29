@@ -2,6 +2,6 @@ class ContactsController < ApplicationController
   def index
 end
 def new
-  @inquiry=inquiry.new
+  @contact=contact.new
 end
 end
